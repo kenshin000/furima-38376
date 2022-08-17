@@ -8,7 +8,6 @@ class User < ApplicationRecord
          validates :first_name, presence: true
          validates :last_name, presence: true
          validates :birthday, presence: true
-         KATAKANA_REGEXP = /\A[\p{katakana}\u{30fc}]+\z/
-         validates :first_name_kana, format: { :with KATAKANA_REGEXP }
-         validates :last_name_kana, format: { :with KATAKANA_REGEXP }
+         validates :first_name_kana, presence: true, format: { with: /\A[\p{katakana}\p{blank}ー－]+\z/}
+         validates :last_name_kana, presence: true, format: { with: /\A[\p{katakana}\p{blank}ー－]+\z/}
 end
