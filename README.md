@@ -22,10 +22,11 @@ has_many :orders
 | ------------------ | ------ | -----------              |
 | name               | string | null: false              |
 | item_explain       | text   | null: false              |
-| price              | nteger | null: false              |
-| item_image         | string | null: false              |
+| price              | integer | null: false              |
+| commission         | integer | null: false              |
+| profit             | integer | null: false              |
 | user     | references | null: false, foreign_key: true |
-| detail_id   | nteger |  null: false, foreign_key: true |
+| detail_id   | integer |  null: false, foreign_key: true |
 
 
 belongs_to :user
@@ -42,6 +43,7 @@ has_one :order
 
 belongs_to :item
 belongs_to :user
+has_one :address
 
  ## addresses テーブル
 
