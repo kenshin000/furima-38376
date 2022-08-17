@@ -27,6 +27,7 @@ has_many :orders
 | situation_id       | integer| null: false              |
 | area_id            | integer | null: false              |
 | send_day_id        | integer | null: false              |
+| send_load_id        | integer | null: false              |
 | user     | references | null: false, foreign_key: true |
 
 
