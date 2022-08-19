@@ -104,21 +104,6 @@ RSpec.describe User, type: :model do
          @user.valid?
          expect(@user.errors.full_messages).to include("Birthday can't be blank")
       end
-      it "ログアウト状態の場合には、トップページのヘッダーに、「新規登録」「ログイン」ボタンが表示されること。" do 
-        
-      end
-      it "ログイン状態の場合には、トップページのヘッダーに、「ユーザーのニックネーム」と「ログアウト」ボタンが表示されること。
-      " do 
-        
-      end
-      it "トップページヘッダーの、「新規登録」「ログイン」ボタンをクリックすると、各ページに遷移できること。" do 
-        
-      end
-      it "トップページヘッダーの、「ログアウト」ボタンをクリックすると、ログアウトができること。
-      " do 
-        
-      end
-
     end
 
   end
