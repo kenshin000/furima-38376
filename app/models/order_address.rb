@@ -1,4 +1,4 @@
-class OrederAddress
+class OrderAddress
 
   include ActiveModel::Model
   attr_accessor :item_id, :user_id, :post_code, :municipalities, :address_number,
@@ -17,8 +17,8 @@ class OrederAddress
     end
 
     def save
-     
-     order = Order.create(item_id: item_id, user_id: user_id)
+      
+      order = Order.create(item_id: item_id, user_id: user_id)
     
       Address.create(postal_code: postal_code, area_id: area_id, municipalities: municipalities, address_number: address_number, building_name: building_name, phone_number: phone_number, order_id: order.id)
     end
