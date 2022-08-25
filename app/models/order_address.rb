@@ -1,4 +1,4 @@
-class OrederAddresscale
+class OrederAddress
 
   include ActiveModel::Model
   attr_accessor :item_id, :user_id, :post_code, :municipalities, :address_number,

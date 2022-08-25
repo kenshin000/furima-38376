@@ -1,0 +1,2 @@
+class AdderssesController < ApplicationController
+end
